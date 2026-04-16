@@ -1,4 +1,4 @@
-# how-i-use-claude
+# How I Use Claude Code
 
 A living document of how I actually use Claude Code day-to-day -- the configurations, workflows, tips, and tricks that make it work for me.
 
