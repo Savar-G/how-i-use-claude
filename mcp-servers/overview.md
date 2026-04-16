@@ -1,0 +1,7 @@
+# MCP Servers: What They Are and Why They Matter
+
+MCP (Model Context Protocol) is an open standard that lets Claude Code connect to external tools and services through lightweight server integrations. Instead of being limited to reading and writing code, Claude gains the ability to interact with project management tools, databases, design software, calendars, email, analytics platforms, and more -- all within the same conversation. Each MCP server exposes a set of tools that Claude can call directly, turning natural language requests into real actions across your entire workflow.
+
+This is what makes Claude Code more than a code assistant. With the right MCP servers connected, it becomes a workflow automation layer that sits across your entire stack. You can go from "pull the latest designs from Figma, check the relevant ClickUp ticket, query the database schema, and start implementing" -- all in one session, without switching tabs or copying context between tools. The compounding effect is significant: every additional MCP server you connect removes another context switch from your day.
+
+To configure MCP servers, you add them to your Claude Code settings (either globally in `~/.claude/settings.json` or per-project in `.claude/settings.json`). Each server entry specifies a command to run and any required environment variables (usually API keys or auth tokens). For the full setup guide, check the [Anthropic MCP documentation](https://docs.anthropic.com/en/docs/claude-code/mcp-servers).
