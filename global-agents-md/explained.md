@@ -19,7 +19,7 @@ This folder holds the instruction files that load in every project, for Claude C
 
 A pointer line in `AGENTS.md` names a file and the condition that makes the agent read it. The agent loads the file only on that condition, so the always-loaded part stays small.
 
-- **"Code, commits, branches, worktrees"** - before the agent writes code or a commit, or creates a branch or a worktree, it reads `~/.claude/CODING_STANDARDS.md`.
+- **"Branches and worktrees"** - before the agent creates a branch or a worktree, it reads `~/.claude/CODING_STANDARDS.md`.
 - **"Parallel agents, cmux panes"** - before the agent spawns another agent or opens a `cmux` pane, it reads `~/.claude/docs/parallel-agents.md`.
 - **"Design"** - for UI or UX work, the agent uses the `design` skill. The `design` and `impeccable` skills both claim design requests, and this line selects the entry point.
 - **"Vault preflight"** - before the agent plans or acts, it runs the `ask-vault` skill. The line adds the skip list and the "if you are unsure, run it" rule.

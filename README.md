@@ -26,7 +26,7 @@ Mine is eight lines, and each line changes behaviour compared with the model def
 - **Communication** -- write prose in ASD-STE100 Simplified Technical English, and lead with the answer
 - **Memory** -- run the Obsidian vault preflight before planning, and keep vault content inside the task that needs it
 - **Project files** -- every project's instruction file is `AGENTS.md`
-- **Pointers** -- `CODING_STANDARDS.md` for code, commits, branches, and worktrees; `docs/parallel-agents.md` for parallel agents in cmux; the `design` skill for UI and UX work
+- **Pointers** -- `CODING_STANDARDS.md` for branches and worktrees; `docs/parallel-agents.md` for parallel agents in cmux; the `design` skill for UI and UX work
 
 The key insight: a short global `AGENTS.md` saves you from repeating yourself in every conversation, and it costs context on every turn. Keep a line only if it changes behaviour. Put task-specific rules in files that load only when a pointer fires. See [`global-agents-md/explained.md`](global-agents-md/explained.md) for the layout and the install steps.
 
