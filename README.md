@@ -8,7 +8,7 @@ This isn't a tutorial or a best-practices guide. It's a real, opinionated setup 
 
 ## Table of Contents
 
-1. [Global CLAUDE.md](#global-claudemd)
+1. [Global AGENTS.md](#global-agentsmd)
 2. [Project CLAUDE.md Examples](#project-claudemd-examples)
 3. [MCP Servers](#mcp-servers)
 4. [Settings and Customization](#settings-and-customization)
@@ -17,7 +17,7 @@ This isn't a tutorial or a best-practices guide. It's a real, opinionated setup 
 
 ---
 
-## Global CLAUDE.md
+## Global AGENTS.md
 
 The global `CLAUDE.md` file lives at `~/.claude/CLAUDE.md` and applies behavioral instructions across every project. Think of it as your baseline personality layer for Claude Code -- how you want it to think, plan, and execute regardless of what you're working on.
 
