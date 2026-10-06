@@ -19,17 +19,16 @@ This isn't a tutorial or a best-practices guide. It's a real, opinionated setup 
 
 ## Global AGENTS.md
 
-The global `AGENTS.md` lives at `~/.claude/AGENTS.md` (Claude Code loads it through a one-line `~/.claude/CLAUDE.md` import; Codex reads it through a `~/.codex/AGENTS.md` symlink) and applies behavioral instructions across every project. Think of it as your baseline personality layer for Claude Code -- how you want it to think, plan, and execute regardless of what you're working on.
+The global `AGENTS.md` lives at `~/.claude/AGENTS.md` and applies across every project. Claude Code loads it through a one-line `~/.claude/CLAUDE.md` import (`@AGENTS.md`). Codex reads it through a `~/.codex/AGENTS.md` symlink. One file serves both tools.
 
-Mine covers things like:
+Mine is eight lines, and each line changes behaviour compared with the model default:
 
-- **Task planning** -- forcing Claude to understand the architecture and propose a plan before writing code
-- **Implementation standards** -- no dummy implementations, no guessing at library APIs without looking them up
-- **Problem solving approach** -- root cause analysis over trial and error
-- **UI and UX principles** -- skill stacking design skills, attention to micro-interactions
-- **Commit discipline** -- commit early and often, break work into logical milestones
+- **Communication** -- write prose in ASD-STE100 Simplified Technical English, and lead with the answer
+- **Memory** -- run the Obsidian vault preflight before planning, and keep vault content inside the task that needs it
+- **Project files** -- every project's instruction file is `AGENTS.md`
+- **Pointers** -- `CODING_STANDARDS.md` for code, commits, branches, and worktrees; `docs/parallel-agents.md` for parallel agents in cmux; the `design` skill for UI and UX work
 
-The key insight: a well-written global `CLAUDE.md` saves you from repeating yourself in every conversation. You set the tone once and it carries forward.
+The key insight: a short global `AGENTS.md` saves you from repeating yourself in every conversation, and it costs context on every turn. Keep a line only if it changes behaviour. Put task-specific rules in files that load only when a pointer fires. See [`global-agents-md/explained.md`](global-agents-md/explained.md) for the layout and the install steps.
 
 ## Project CLAUDE.md Examples
 
