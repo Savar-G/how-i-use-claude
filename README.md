@@ -19,7 +19,7 @@ This isn't a tutorial or a best-practices guide. It's a real, opinionated setup 
 
 ## Global AGENTS.md
 
-The global `CLAUDE.md` file lives at `~/.claude/CLAUDE.md` and applies behavioral instructions across every project. Think of it as your baseline personality layer for Claude Code -- how you want it to think, plan, and execute regardless of what you're working on.
+The global `AGENTS.md` lives at `~/.claude/AGENTS.md` (Claude Code loads it through a one-line `~/.claude/CLAUDE.md` import; Codex reads it through a `~/.codex/AGENTS.md` symlink) and applies behavioral instructions across every project. Think of it as your baseline personality layer for Claude Code -- how you want it to think, plan, and execute regardless of what you're working on.
 
 Mine covers things like:
 
